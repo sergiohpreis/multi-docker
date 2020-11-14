@@ -23,6 +23,7 @@ after_success:
   - docker push sergiohpreis/multi-worker
 
 deploy:
+  provider: elasticbeanstalk
   region: "us-east-1"
   app: "multi-docker"
   env: "MultiDocker-env"
